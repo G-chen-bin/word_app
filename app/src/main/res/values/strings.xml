@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">word_app</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="tab_menu_review">复习</string>
+    <string name="tab_menu_book">词库</string>
+    <string name="tab_menu_statistic">统计</string>
+    <string name="tab_menu_setting">设置</string>
+
+
+</resources>
