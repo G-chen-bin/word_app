@@ -7,13 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-/**
- * Created by Jay on 2015/8/28 0028.
- */
-public class MyFragment_review extends Fragment {
 
-    public MyFragment_review() {
-    }
+public class MyFragment_review extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

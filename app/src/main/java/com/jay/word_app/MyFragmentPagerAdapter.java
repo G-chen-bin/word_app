@@ -5,16 +5,14 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.view.ViewGroup;
 
-/**
- * Created by Jay on 2015/8/31 0031.
- */
 public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
 
+
     private final int PAGER_COUNT = 4;
-    private MyFragment_review myFragmentReview = null;
-    private MyFragment_book myFragmentBook = null;
-    private MyFragment_statistic myFragmentStatistic = null;
-    private MyFragment_setting myFragmentSetting = null;
+    private MyFragment_review myFragmentReview ;
+    private MyFragment_book myFragmentBook;
+    private MyFragment_statistic myFragmentStatistic;
+    private MyFragment_setting myFragmentSetting;
 
 
     public MyFragmentPagerAdapter(FragmentManager fm) {
