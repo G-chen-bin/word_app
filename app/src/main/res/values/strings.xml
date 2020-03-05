@@ -1,9 +1,11 @@
 <resources>
     <string name="app_name">word_app</string>
 
+    <drawable name="clr_selected">#FFFFFF</drawable>
+    <drawable name="clr_pressed">#ffcccccc</drawable>
+
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-
 
     <string name="tab_menu_review">复习</string>
     <string name="tab_menu_book">词库</string>

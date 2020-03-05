@@ -14,8 +14,7 @@ public class MyFragment_setting extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.setting_layout,container,false);
-        TextView txt_content = (TextView) view.findViewById(R.id.txt_setting_content);
-        txt_content.setText("第四个Fragment");
+
         return view;
     }
 }

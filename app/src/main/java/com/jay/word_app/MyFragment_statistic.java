@@ -14,6 +14,7 @@ public class MyFragment_statistic extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.statistic_layout,container,false);
+
         TextView txt_content = (TextView) view.findViewById(R.id.txt_statistic_content);
         txt_content.setText("第三个Fragment");
 

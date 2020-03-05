@@ -10,6 +10,11 @@ import android.widget.TextView;
 
 public class MyFragment_review extends Fragment {
 
+
+    public MyFragment_review(){
+
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.review_layout, container, false);

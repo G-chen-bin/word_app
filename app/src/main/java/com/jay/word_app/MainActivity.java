@@ -2,6 +2,7 @@ package com.jay.word_app;
 
 import android.app.Fragment;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
@@ -12,7 +13,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener,
+public class MainActivity extends FragmentActivity implements RadioGroup.OnCheckedChangeListener,
         ViewPager.OnPageChangeListener {
 
     //UI Objects
@@ -32,6 +33,8 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
     public static final int PAGE_THREE = 2;
     public static final int PAGE_FOUR = 3;
 
+    private List<android.support.v4.app.Fragment> mFragments = new ArrayList<>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,8 +42,13 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
         setContentView(R.layout.activity_main);
 
         bindViews();//绑定各种控件
-        vpager_setting();//ViewPage设置
 
+        mFragments.add(new MyFragment_review());
+        mFragments.add(new MyFragment_book());
+        mFragments.add(new MyFragment_statistic());
+        mFragments.add(new MyFragment_setting());
+
+        vpager_setting();//ViewPage设置
     }
 
     public void bindViews() {
@@ -53,7 +61,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
         rg_tab_bar.setOnCheckedChangeListener(this);
     }
     public void vpager_setting() {
-        vpAdapter = new MyFragmentPagerAdapter(getSupportFragmentManager());
+        vpAdapter = new MyFragmentPagerAdapter(getSupportFragmentManager(),mFragments);
         vpager = (ViewPager) findViewById(R.id.vpager);
         vpager.setAdapter(vpAdapter);
         vpager.setCurrentItem(0);//设置初始选中页面

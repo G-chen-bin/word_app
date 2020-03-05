@@ -44,8 +44,8 @@ public class MyListViewAdapter extends BaseAdapter {
         return mData.get(position);
     }
 
-    public long getItemId(int positionID) {
-        return positionID;
+    public long getItemId(int position) {
+        return position;
     }
 
 }

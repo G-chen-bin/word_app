@@ -19,14 +19,17 @@ public class MyFragment_book extends Fragment {
 
     private List<book> bookList = new ArrayList<book>();
     private ArrayAdapter<book> arrayAdapter;
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        initBooks();
+    }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-
         View view = inflater.inflate(R.layout.book_layout,container,false);
 
-        initBooks();
         ListView ListView_book=view.findViewById(R.id.ListView_book);
-
         ListView_book.setAdapter(new MyListViewAdapter(getLayoutInflater(),bookList));
         return view;
     }

@@ -4,11 +4,33 @@
     android:layout_height="match_parent"
     android:background="@color/bg_white"
     android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/ly_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/bg_top_bar">
 
+        <TextView
+            android:id="@+id/txt_top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="学习统计"
+            android:textColor="@color/text_top_bar"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/div_white" />
+
+    </RelativeLayout>
     <TextView
         android:id="@+id/txt_statistic_content"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center"
         android:text="呵呵"
         android:textColor="@color/text_yellow"
