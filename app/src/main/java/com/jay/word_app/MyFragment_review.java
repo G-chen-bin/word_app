@@ -18,8 +18,8 @@ public class MyFragment_review extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.review_layout, container, false);
-        TextView txt_content = (TextView) view.findViewById(R.id.txt_review_content);
-        txt_content.setText("第一个Fragment,review");
+        /*TextView txt_content = (TextView) view.findViewById(R.id.txt_review_content);
+        txt_content.setText("第一个Fragment,review");*/
         return view;
     }
 }

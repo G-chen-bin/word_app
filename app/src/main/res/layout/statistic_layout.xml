@@ -27,13 +27,12 @@
             android:background="@color/div_white" />
 
     </RelativeLayout>
-    <TextView
-        android:id="@+id/txt_statistic_content"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="呵呵"
-        android:textColor="@color/text_yellow"
-        android:textSize="20sp" />
+    <lecho.lib.hellocharts.view.ColumnChartView
+        android:id="@+id/column_chart_cc"
+        android:layout_width="wrap_content"
+        android:layout_height="500dp"
+        android:layout_gravity="right"
+        android:layout_centerInParent="true"
+        />
 
 </LinearLayout>

@@ -35,11 +35,11 @@ public class MyFragment_book extends Fragment {
     }
 
     private void initBooks() {
-        book apple = new book("Apple",1, R.drawable.add);
+        book apple = new book("新建单词本",1, R.drawable.add);
         bookList.add(apple);
-        book banana = new book("Banana", 2,R.drawable.add);
+        book banana = new book("四级单词", 2,R.drawable.add);
         bookList.add(banana);
-        book orange = new book("Orange",3, R.drawable.add);
+        book orange = new book("六级单词",3, R.drawable.add);
         bookList.add(orange);
     }
 }

@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@color/bg_setting"
+    android:background="@color/white"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <RelativeLayout
         android:id="@+id/ly_top_bar"
@@ -37,10 +37,7 @@
             android:orientation="vertical"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content">
-            <View
-                android:background="@color/black"
-                android:layout_width="fill_parent"
-                android:layout_height="1.0dip" />
+
             <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -113,7 +110,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="1.0dip" />
             <TextView
-                android:id="@+id/txt_collect"
+                android:id="@+id/txt_ChangeMode"
                 style="@style/TxtTitle"
                 android:textSize="16sp"
                 android:gravity="center_vertical"
@@ -180,7 +177,7 @@
                 android:layout_height="50dp"
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp"
-                android:layout_marginTop="20dp"
+
                 android:drawablePadding="10dp"
                 android:clickable="true"
                 android:drawableRight="@drawable/right"
@@ -200,7 +197,7 @@
                 android:layout_height="50dp"
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp"
-                android:layout_marginTop="20dp"
+
                 android:drawablePadding="10dp"
                 android:clickable="true"
                 android:drawableRight="@drawable/right"
@@ -209,6 +206,9 @@
                 android:background="@color/black2"
                 android:layout_width="fill_parent"
                 android:layout_height="1.0dip" />
+
+
+
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
